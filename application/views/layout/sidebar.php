@@ -87,6 +87,15 @@ with font-awesome or any other icon font library -->
             </li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa fa-home">
+            </i>
+            <p>
+              Daftar Ulang
+            </p>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

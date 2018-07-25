@@ -10,9 +10,9 @@
     <div class="row">
       <div class="col-12">
         <div class="card card-warning card-outline">
-          <form action="<?php echo base_url('pendaftaran/input');?>" method="post">
+          <form>
             <div class="card-header">
-              <h3 class="card-title">Input Pendaftaran
+              <h3 class="card-title">Data Pendaftaran
               </h3>
             </div>
             <!-- /.card-header -->
@@ -27,76 +27,49 @@
                 <label class="col-lg-3 col-form-label text-right">Nomor Pendaftaran
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="dftr_nodaftar" class="form-control" value="<?php echo $nodaftar?>" required readonly>
+                  <input type="text" class="form-control" value="<?php echo $detail['dftr_nodaftar']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Tahun Ajaran
                 </label>
                 <div class="col-lg-4">
-                  <select name="dftr_ta_id" class="form-control" required>
-                    <option>Tahun Ajaran
-                    </option>
-                    <?php foreach ($ta as $list) { ?>
-                    <option value="<?php echo $list['ta_id'];?>">
-                      <?php echo $list['ta_awal'];?>/
-                      <?php echo $list['ta_akhir'];?>
-                    </option>
-                    <?php } ?>
-                  </select>
+                  <input type="text" class="form-control" value="<?php echo $detail['ta_awal']?> / <?php echo $detail['ta_akhir']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Nama Calon Siswa
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="dftr_nama_calon_siswa" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['dftr_nama_calon_siswa']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Tempat Lahir
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="dftr_tempat_lahir" class="form-control" placeholder="Tempat Lahir" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['dftr_tempat_lahir']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Tanggal Lahir
                 </label>
                 <div class="col-lg-4">
-                  <input type="date" name="dftr_tgl_lahir" class="form-control" placeholder="Nomor Pendaftaran" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['dftr_tgl_lahir']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Jenis Kelamin
                 </label>
-                <div class="col-lg-2">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <input type="radio" name="dftr_jenkel" value="L">
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" value="Laki - Laki" readonly>
-                  </div>
-                </div>
-                <div class="col-lg-2">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <input type="radio" name="dftr_jenkel" value="P">
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" value="Perempuan" readonly>
-                  </div>
+                <div class="col-lg-4">
+                  <input type="text" class="form-control" value="<?php echo $detail['dftr_jenkel']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Alamat
                 </label>
                 <div class="col-lg-4">
-                  <textarea name="dftr_alamat" class="form-control" placeholder="Alamat">
-                  </textarea>
+                  <input type="text" class="form-control" value="<?php echo $detail['dftr_alamat']?>"  readonly>
                 </div>
               </div>
               <div class="alert alert-info" role="alert">
@@ -106,58 +79,53 @@
                 <label class="col-lg-3 col-form-label text-right">Nama Ayah
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nama_ayah" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_nama_ayah']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-lg-3 col-form-label text-right">No HP Ayah
+                <label class="col-lg-3 col-form-label text-right">Nomor HP Ayah
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nohp_ayah" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_nohp_ayah']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Pekerjaan Ayah
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_pekerjaan_ayah" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_pekerjaan_ayah']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Nama Ibu
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nama_ibu" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_nama_ibu']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
-                <label class="col-lg-3 col-form-label text-right">No HP Ibu
+                <label class="col-lg-3 col-form-label text-right">Nomor HP Ibu
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nohp_ibu" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_nohp_ibu']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Pekerjaan Ibu
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_pekerjaan_ibu" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_pekerjaan_ibu']?>"  readonly>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Alamat Orang Tua
                 </label>
                 <div class="col-lg-4">
-                  <textarea name="ortu_alamat" class="form-control" placeholder="Alamat Orang Tua">
-                  </textarea>
+                  <input type="text" class="form-control" value="<?php echo $detail['ortu_alamat']?>"  readonly>
                 </div>
               </div>
             </div>
             <!-- /.card-body -->
-            <div class="card-footer text-center">
-              <button type="submit" class="btn btn-primary">Input Pendaftaran
-              </button>
-            </div>
           </form>
         </div>
         <!-- /.card -->
