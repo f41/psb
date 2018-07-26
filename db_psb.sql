@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 25, 2018 at 05:52 AM
+-- Generation Time: Jul 26, 2018 at 06:28 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -93,15 +93,18 @@ INSERT INTO `tbmaster_tahun_ajaran` (`ta_id`, `ta_awal`, `ta_akhir`) VALUES
 CREATE TABLE `tbmaster_user` (
   `user_id` varchar(3) NOT NULL,
   `user_nama` varchar(40) NOT NULL,
-  `user_password` varchar(255) NOT NULL
+  `user_password` varchar(255) NOT NULL,
+  `user_level` char(1) NOT NULL,
+  `user_foto` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbmaster_user`
 --
 
-INSERT INTO `tbmaster_user` (`user_id`, `user_nama`, `user_password`) VALUES
-('adm', 'Administrator', '21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `tbmaster_user` (`user_id`, `user_nama`, `user_password`, `user_level`, `user_foto`) VALUES
+('adm', 'Administrator', '21232f297a57a5a743894a0e4a801fc3', '0', 'adm.png'),
+('kps', 'Kepala Sekolah', '8561863b55faf85b9ad67c52b3b851ac', '1', 'kps.gif');
 
 -- --------------------------------------------------------
 

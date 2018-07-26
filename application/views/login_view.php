@@ -28,9 +28,10 @@
         <div class="card-body login-card-body">
           <p class="login-box-msg">Sign in to start your session
           </p>
-          <form action="#" method="post">
+          <?php echo $this->session->flashdata('pesan')?>
+          <form action="<?php echo base_Url('login')?>" method="post">
             <div class="input-group mb-3">
-              <input class="form-control" type="text" placeholder="Username" autofocus required>
+              <input class="form-control" type="text" placeholder="Username" name="username" autofocus required>
               <div class="input-group-append">
                 <span class="input-group-text">
                   <i class="fa fa-user">
@@ -39,7 +40,7 @@
               </div>
             </div>
             <div class="input-group mb-3">
-              <input class="form-control" type="password" placeholder="Password" required>
+              <input class="form-control" type="password" placeholder="Password" name="password" required>
               <div class="input-group-append">
                 <span class="input-group-text">
                   <i class="fa fa-key">

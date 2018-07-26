@@ -12,10 +12,10 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="<?php echo base_url('assets/');?>dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        <img src="<?php echo base_url('assets/');?>dist/img/<?php echo ucfirst($this->session->userdata('foto')); ?>" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Alexander Pierce
+        <a href="#" class="d-block"><?php echo ucfirst($this->session->userdata('nama')); ?>
         </a>
       </div>
     </div>
@@ -26,6 +26,7 @@
 with font-awesome or any other icon font library -->
         <li class="nav-header">MENU
         </li>
+        <?php if($this->session->userdata('level') == 0) { ?>
         <li class="nav-item">
           <a href="<?php echo base_url();?>" class="nav-link">
             <i class="nav-icon fa fa-home">
@@ -96,6 +97,79 @@ with font-awesome or any other icon font library -->
             </p>
           </a>
         </li>
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa fa-file">
+            </i>
+            <p>
+              Laporan
+              <i class="right fa fa-angle-left">
+              </i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-calendar nav-icon">
+                </i>
+                <p>Lorem Ipsum
+                </p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-calendar nav-icon">
+                </i>
+                <p>Lorem Ipsum
+                </p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      <?php }else{ ?>
+        <li class="nav-item">
+          <a href="<?php echo base_url();?>" class="nav-link">
+            <i class="nav-icon fa fa-home">
+            </i>
+            <p>
+              Home
+            </p>
+          </a>
+        </li>
+        <li class="nav-item has-treeview">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fa fa-file">
+            </i>
+            <p>
+              Laporan
+              <i class="right fa fa-angle-left">
+              </i>
+            </p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-calendar nav-icon">
+                </i>
+                <p>Lorem Ipsum
+                </p>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-calendar nav-icon">
+                </i>
+                <p>Lorem Ipsum
+                </p>
+              </a>
+            </li>
+          </ul>
+        </li>
+      <?php } ?>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
