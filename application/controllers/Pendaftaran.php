@@ -14,7 +14,8 @@ class Pendaftaran extends CI_Controller {
 		$data = array (	
 						'title'			=> 'Data Pendaftaran',
 						'isi'	    	=> 'pendaftaran_view',
-						'pendaftaran'	=> $this->Psb_model->pendaftaran()
+						'pendaftaran'	=> $this->Psb_model->pendaftaran(),
+						'ta'		=> $this->Psb_model->ta()
 					  );
 		$this->load->view('layout/wrapper',$data);
 	}
@@ -70,7 +71,8 @@ class Pendaftaran extends CI_Controller {
 		$data = array (	
 						'title'		=> 'Data Pendaftaran',
 						'isi'	    => 'detail_pendaftaran_view',
-						'detail'	=> $this->Psb_model->detail_pendaftaran($id)
+						'detail'	=> $this->Psb_model->detail_pendaftaran($id),
+						'ta'		=> $this->Psb_model->ta()
 					  );
 		$this->load->view('layout/wrapper',$data);
 	}

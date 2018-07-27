@@ -1,3 +1,4 @@
+<?php $this->load->view('modal_lap_seleksi')?>
  <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->

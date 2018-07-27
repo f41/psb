@@ -56,5 +56,31 @@ class Psb_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->row_array();
 	}
+
+	public function seleksi($data) {
+		$this->db->where('dftr_nodaftar',$data['dftr_nodaftar']);
+		return $this->db->update('tb_pendaftar',$data);
+	}
+
+	//Menampilkan Data Pendaftaran
+	public function list_daftarulang()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_pendaftar');
+		$this->db->join('tbmaster_tahun_ajaran', 'ta_id = dftr_ta_id');
+		$this->db->where('dftr_status', '1');
+		$this->db->order_by('ta_id', 'DESC');
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
+	public function hasil_seleksi($ta)
+	{
+		$this->db->select('*');
+		$this->db->from('tb_pendaftar');
+		$this->db->where('dftr_ta_id', $ta);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
 }
 ?>

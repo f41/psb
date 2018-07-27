@@ -89,7 +89,16 @@ with font-awesome or any other icon font library -->
           </ul>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="<?php echo base_url('seleksi')?>" class="nav-link">
+            <i class="nav-icon fa fa-home">
+            </i>
+            <p>
+              Proses Seleksi
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="<?php echo base_url('daftar_ulang')?>" class="nav-link">
             <i class="nav-icon fa fa-home">
             </i>
             <p>
@@ -109,20 +118,10 @@ with font-awesome or any other icon font library -->
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-seleksi">
                 <i class="fa fa-calendar nav-icon">
                 </i>
-                <p>Lorem Ipsum
-                </p>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fa fa-calendar nav-icon">
-                </i>
-                <p>Lorem Ipsum
+                <p>Hasil Seleksi
                 </p>
               </a>
             </li>
@@ -150,20 +149,10 @@ with font-awesome or any other icon font library -->
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-seleksi">
                 <i class="fa fa-calendar nav-icon">
                 </i>
-                <p>Lorem Ipsum
-                </p>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fa fa-calendar nav-icon">
-                </i>
-                <p>Lorem Ipsum
+                <p>Hasil Seleksi
                 </p>
               </a>
             </li>
