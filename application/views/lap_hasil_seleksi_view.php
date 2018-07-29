@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title> Surat Pernyataan
+    <title> Laporan
     </title>
   </head>
   <body bgcolor="white" onload="window.print()">

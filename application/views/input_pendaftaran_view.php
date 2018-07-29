@@ -106,42 +106,42 @@
                 <label class="col-lg-3 col-form-label text-right">Nama Ayah
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nama_ayah" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" name="ortu_nama_ayah" class="form-control" placeholder="Nama Ayah" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">No HP Ayah
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nohp_ayah" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" name="ortu_nohp_ayah" class="form-control" placeholder="No HP Ayah" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Pekerjaan Ayah
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_pekerjaan_ayah" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" name="ortu_pekerjaan_ayah" class="form-control" placeholder="Pekerjaan Ayah" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Nama Ibu
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nama_ibu" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" name="ortu_nama_ibu" class="form-control" placeholder="Nama Ibu" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">No HP Ibu
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_nohp_ibu" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" name="ortu_nohp_ibu" class="form-control" placeholder="No HP Ibu" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label class="col-lg-3 col-form-label text-right">Pekerjaan Ibu
                 </label>
                 <div class="col-lg-4">
-                  <input type="text" name="ortu_pekerjaan_ibu" class="form-control" placeholder="Nama Calon Siswa" required>
+                  <input type="text" name="ortu_pekerjaan_ibu" class="form-control" placeholder="Pekerjaan Ibu" required>
                 </div>
               </div>
               <div class="form-group row">
