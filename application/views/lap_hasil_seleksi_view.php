@@ -60,5 +60,21 @@
               <?php $no++; } ?>
               </tbody>
             </table>
+<br>
+            <table width="100%">
+  <tr style="text-align: center;">
+    <td width="70%">
+    </td>
+    <td>Samarinda, <?php echo date('d M Y') ?>
+    </td>
+  </tr>
+  <tr style="text-align: center;">
+    <td width="70%">
+    </td>
+    <td>Kepala Sekolah
+    </td>
+  </tr>
+
+</table>
 </body>
 </html>
