@@ -74,12 +74,9 @@ class Psb_model extends CI_Model {
 		return $query->result_array();
 	}
 
-	public function hasil_seleksi($ta)
+	public function hasil_seleksi($awal, $akhir)
 	{
-		$this->db->select('*');
-		$this->db->from('tb_pendaftar');
-		$this->db->where('dftr_ta_id', $ta);
-		$query = $this->db->get();
+		$query = $this->db->query("select * from tb_pendaftar where dftr_create_dt between '$awal' and '$akhir'");
 		return $query->result_array();
 	}
 }

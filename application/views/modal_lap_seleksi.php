@@ -10,14 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <select name="ta" class="form-control" required>
-                    <?php foreach ($ta as $list) { ?>
-                    <option value="<?php echo $list['ta_id'];?>">
-                      <?php echo $list['ta_awal'];?>/
-                      <?php echo $list['ta_akhir'];?>
-                    </option>
-                    <?php } ?>
-                  </select>
+        <input type="text" id="daterangepicker" name="periode" class="form-control">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

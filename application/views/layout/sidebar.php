@@ -127,7 +127,7 @@ with font-awesome or any other icon font library -->
             </li>
           </ul>
         </li>
-      <?php }else{ ?>
+      <?php }elseif($this->session->userdata('level') == 1){ ?>
         <li class="nav-item">
           <a href="<?php echo base_url();?>" class="nav-link">
             <i class="nav-icon fa fa-home">
@@ -157,6 +157,24 @@ with font-awesome or any other icon font library -->
               </a>
             </li>
           </ul>
+        </li>
+      <?php }else{ ?>
+        <li class="nav-item">
+          <a href="<?php echo base_url();?>" class="nav-link">
+            <i class="nav-icon fa fa-home">
+            </i>
+            <p>
+              Home
+            </p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="<?php echo base_url('pendaftaran/input');?>" class="nav-link">
+            <i class="fa fa-calendar nav-icon">
+            </i>
+            <p>Input Pendaftaran
+            </p>
+          </a>
         </li>
       <?php } ?>
       </ul>

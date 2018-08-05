@@ -14,6 +14,7 @@
     <br>
     </p>
   </font>
+  <p align="center">Periode: <?= $awal ?> - <?= $akhir ?></p>
 <br>
 <table width="100%" border="1">
               <thead>
