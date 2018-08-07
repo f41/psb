@@ -10,7 +10,24 @@
         </button>
       </div>
       <div class="modal-body">
-        <input type="text" id="daterangepicker" name="periode" class="form-control">
+        <div class="form-group row">
+                <label class="col-lg-12 col-form-label">Periode
+                </label>
+                <div class="col-lg-12">
+                  <input type="text" id="daterangepicker" name="periode" class="form-control">
+                </div>
+              </div>
+               <div class="form-group row">
+                <label class="col-lg-12 col-form-label">Jenis Laporan
+                </label>
+                <div class="col-lg-12">
+                  <select name="jenis_laporan" class="form-control">
+                    <option value="">Semua</option>
+                    <option value="1">Lulus</option>
+                    <option value="0">Tidak Lulus</option>
+                  </select>
+                </div>
+              </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

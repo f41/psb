@@ -35,8 +35,6 @@
                 </label>
                 <div class="col-lg-4">
                   <select name="dftr_ta_id" class="form-control" required>
-                    <option>Tahun Ajaran
-                    </option>
                     <?php foreach ($ta as $list) { ?>
                     <option value="<?php echo $list['ta_id'];?>">
                       <?php echo $list['ta_awal'];?>/

@@ -11,12 +11,18 @@ class Laporan extends CI_Controller {
 
 	public function hasil_seleksi()
 	{
-		$awal  = substr($this->input->post('periode'),1,10);
-		$akhir  = substr($this->input->post('periode'),-10,10);
-		$akhir = 
+		$awal    = substr($this->input->post('periode'),1,10);
+		$akhir   = substr($this->input->post('periode'),-10,10);
+		$laporan = $this->input->post('jenis_laporan');
+
+		if ($laporan != '') {
+			$hasil = $this->Psb_model->hasil_seleksi2($awal, $akhir, $laporan);
+		} else {
+			$hasil = $this->Psb_model->hasil_seleksi($awal, $akhir);
+		};
 		$data = array (	
 						'title'		=> 'Hasil Seleksi',
-						'hasil'		=> $this->Psb_model->hasil_seleksi($awal, $akhir),
+						'hasil'		=> $hasil,
 						'awal'		=> $awal,
 						'akhir'		=> $akhir
 					  );

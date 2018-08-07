@@ -79,5 +79,11 @@ class Psb_model extends CI_Model {
 		$query = $this->db->query("select * from tb_pendaftar where dftr_create_dt between '$awal' and '$akhir'");
 		return $query->result_array();
 	}
+
+	public function hasil_seleksi2($awal, $akhir, $laporan)
+	{
+		$query = $this->db->query("select * from tb_pendaftar where dftr_create_dt between '$awal' and '$akhir' and dftr_status = '$laporan'");
+		return $query->result_array();
+	}
 }
 ?>
